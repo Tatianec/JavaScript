@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+	<p>Exercicio 2</p>
+    <input type="button" onclick="funcao1()" value="Exibir Alert" />
+
+    <p>Exercicio 3</p>
+    <input type="button" onclick="maiorNumero()" value="Maior Numero" />
+
+    <p>Exercicio 5</p>
+    <input type="button" onclick="media()" value="Media Aritmética" />
+
+	<p>----------------------------------------------------------------------</p>
+
+    <h1>Calculadora de IMC</h1>
+	<label for="peso">Informe seu peso em kg: </label>
+	<input type="text" id="peso">
+	<br>
+	<label for="altura">Informe sua altura em metros: </label>
+	<input type="text" id="altura">
+	<br>
+	<button onclick="calcularIMC()">Calcular IMC</button>
+	<div id="resultadoIMC"></div>
+
+	<p>----------------------------------------------------------------------</p>
+
+    <h1>Soma dos múltiplos de 3 ou 5 abaixo de 1000</h1>
+	<label>Resultado: <output type="text" id="resultMUltiplos" disabled></label>
+	<br>
+	<button onclick="calcular()">Calcular</button>
+
+	<p>----------------------------------------------------------------------</p>
+
+	<h1>Sequência de Fibonacci</h1>
+	<button onclick="gerarFibonacci()">Gerar</button>
+	<div id="fibonacci"></div>
+
+	<p>----------------------------------------------------------------------</p>
+
+    <h1>Numero primo</h1>
+    <button onclick="calcularPrimo()">Calcular primo</button>
+    <label>Resultado numero primo: <output type="text" id="output" disabled></label>
+	
+	<p>----------------------------------------------------------------------</p>
+
+    <h1>Tabela de Números Primos</h1>
+    <button onclick="gerarTabela()">Gerar Tabela</button>
+    <table>
+        <thead>
+            <tr>
+            <th>Número</th>
+            <th>Primo?</th>
+            </tr>
+        </thead>
+        <tbody id="tabela">
+        </tbody>
+    </table>
+
+	<p>----------------------------------------------------------------------</p>
+	
+    <h1>Cálculo do Delta</h1>
+	<label>Coeficiente a:</label>
+	<input type="number" id="coef_a"><br><br>
+	<label>Coeficiente b:</label>
+	<input type="number" id="coef_b"><br><br>
+	<label>Coeficiente c:</label>
+	<input type="number" id="coef_c"><br><br>
+	<button onclick="calcularDelta()">Calcular Delta</button><br><br>
+	<p id="passos"></p>
+	<p id="resultadoDelta"></p>
+
+	<p>----------------------------------------------------------------------</p>
+
+    <h1>Invertendo Sequência de Caracteres</h1>
+
+	<label>Digite uma sequência de caracteres: </label>
+	<input type="text" id="inputText">
+	<button onclick="inverterCaracteres()">Inverter</button>
+    <br>
+	<output id="resultInverter"></output>
+
+	<p>----------------------------------------------------------------------</p>
+
+	<h1>Operação de potenciação com números aleatórios</h1>
+	<button onclick="calcularPotenciacao()">Calcular</button>
+	<output id="resultadoPotencia"></output>
+
+	<p>----------------------------------------------------------------------</p>
+
+    <h1>Potenciação</h1>
+	<button onclick="expoente()">Calcular</button>
+    <table>
+      <thead>
+        <tr>
+          <th>Expoente</th>
+          <th>Operação</th>
+          <th>Resultado</th>
+        </tr>
+      </thead>
+      <tbody id="tabela-resultados"></tbody>
+    </table>
+
+	<p>----------------------------------------------------------------------</p>
+
+	<h1>Operação de Potenciação</h1>
+
+	<p>Abaixo estão os resultados da potenciação de 2 elevado a 8, apresentados passo a passo:</p>
+	<ul id="resultadosPotenciacao">
+		<button onclick="calcularOperacao2()">Calcular Operação</button>
+	</ul>
+
+	<p>----------------------------------------------------------------------</p>
+
+	<div>
+		<h1>Exemplo de potenciação com Math.pow()</h1>
+		<ul id="potenciasPow"></ul>
+		<button onclick="calcularPow()">Calcular</button>
+	</div>
+
+	<p>----------------------------------------------------------------------</p>
+
+	<br>
+	<div>
+		<h1>Ordenação de Sequência de Caracteres</h1>
+		<label for="input">Digite uma sequência de caracteres:</label>
+		<input type="text" id="input">
+		<button onclick="ordenar()">Ordenar</button>
+		<p id="resultadoOrdenacao"></p>
+	</div>
+	
+	<p>----------------------------------------------------------------------</p>
+
+	<h1>Invertendo uma sequência de caracteres em HTML</h1>
+	<label for="entrada">Digite uma sequência de caracteres:</label>
+	<input type="text" id="entrada">
+	<button onclick="inverter()">Inverter</button>
+	<p id="invert"></p>
+</body>
+</html>
